@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Link from 'next/link';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -11,45 +10,33 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import DashboardIcon from '@mui/icons-material/Dashboard';
 import HomeIcon from '@mui/icons-material/Home';
-import StarIcon from '@mui/icons-material/Star';
 import ChecklistIcon from '@mui/icons-material/Checklist';
-import SettingsIcon from '@mui/icons-material/Settings';
-import SupportIcon from '@mui/icons-material/Support';
-import LogoutIcon from '@mui/icons-material/Logout';
 import ThemeRegistry from '@/components/ThemeRegistry/ThemeRegistry';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import SportsHandballIcon from '@mui/icons-material/SportsHandball';
 
 export const metadata = {
-  title: 'Next.js App Router + Material UI v5',
-  description: 'Next.js App Router + Material UI v5',
+  title: 'Thorsten Alpers',
+  description: 'Homepage of Thorsten Alpers',
 };
 
-const DRAWER_WIDTH = 240;
-
-const LINKS = [
-  { text: 'Home', href: '/', icon: HomeIcon },
-  { text: 'Starred', href: '/starred', icon: StarIcon },
-  { text: 'Tasks', href: '/tasks', icon: ChecklistIcon },
-];
-
-const PLACEHOLDER_LINKS = [
-  { text: 'Settings', icon: SettingsIcon },
-  { text: 'Support', icon: SupportIcon },
-  { text: 'Logout', icon: LogoutIcon },
-];
+const DRAWER_WIDTH = 180;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  
   return (
     <html lang="en">
       <body>
         <ThemeRegistry>
           <AppBar position="fixed" sx={{ zIndex: 2000 }}>
             <Toolbar sx={{ backgroundColor: 'background.paper' }}>
-              <DashboardIcon sx={{ color: '#444', mr: 2, transform: 'translateY(-2px)' }} />
-              <Typography variant="h6" color="text.primary">
-                Next.js App Router
-              </Typography>
+              <Link href="/" style={{ textDecoration: 'none' }}>
+                <Typography variant="h6" color="text.primary">
+                  Thorsten Alpers
+                </Typography>
+              </Link>
             </Toolbar>
           </AppBar>
           <Drawer
@@ -69,29 +56,49 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           >
             <Divider />
             <List>
-              {LINKS.map(({ text, href, icon: Icon }) => (
-                <ListItem key={href} disablePadding>
-                  <ListItemButton component={Link} href={href}>
-                    <ListItemIcon>
-                      <Icon />
-                    </ListItemIcon>
-                    <ListItemText primary={text} />
-                  </ListItemButton>
-                </ListItem>
-              ))}
+              <ListItem key='/' disablePadding>
+                <ListItemButton component={Link} href='/'>
+                  <ListItemIcon>
+                    <HomeIcon style={{ color: '#333' }} />
+                  </ListItemIcon>
+                  <ListItemText primary='Home' />
+                </ListItemButton>
+              </ListItem>
+              <ListItem key='/skills' disablePadding>
+                <ListItemButton component={Link} href='/skills'>
+                  <ListItemIcon>
+                    <SportsHandballIcon style={{ color: '#333' }} />
+                  </ListItemIcon>
+                  <ListItemText primary='Skills' />
+                </ListItemButton>
+              </ListItem>
+              <ListItem key='/cv' disablePadding>
+                <ListItemButton component={Link} href='/cv'>
+                  <ListItemIcon>
+                    <ChecklistIcon style={{ color: '#333' }} />
+                  </ListItemIcon>
+                  <ListItemText primary='CV' />
+                </ListItemButton>
+              </ListItem>
             </List>
             <Divider sx={{ mt: 'auto' }} />
             <List>
-              {PLACEHOLDER_LINKS.map(({ text, icon: Icon }) => (
-                <ListItem key={text} disablePadding>
-                  <ListItemButton>
-                    <ListItemIcon>
-                      <Icon />
-                    </ListItemIcon>
-                    <ListItemText primary={text} />
-                  </ListItemButton>
-                </ListItem>
-              ))}
+              <ListItem key='https://de.linkedin.com/in/thorsten-alpers-6952a0126' disablePadding>
+                <ListItemButton component={Link} href='https://de.linkedin.com/in/thorsten-alpers-6952a0126' target="_blank">
+                  <ListItemIcon>
+                    <LinkedInIcon style={{ color: '#0072b1' }} />
+                  </ListItemIcon>
+                  <ListItemText primary='LinkedIn' />
+                </ListItemButton>
+              </ListItem>
+              <ListItem key='https://github.com/thorstenalpers' disablePadding>
+                <ListItemButton component={Link} href='https://github.com/thorstenalpers' target="_blank">
+                  <ListItemIcon>
+                    <GitHubIcon style={{ color: '#000' }} />
+                  </ListItemIcon>
+                  <ListItemText primary='GitHub' />
+                </ListItemButton>
+              </ListItem>
             </List>
           </Drawer>
           <Box

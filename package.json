@@ -7,17 +7,21 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "npm install": "npm install"
   },
   "dependencies": {
     "@emotion/cache": "latest",
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
     "@mui/icons-material": "latest",
+    "@mui/lab": "^5.0.0-alpha.155",
     "@mui/material": "latest",
+    "@mui/x-data-grid": "^6.18.4",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-player": "^2.13.0"
   },
   "devDependencies": {
     "@types/node": "latest",

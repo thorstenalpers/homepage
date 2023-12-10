@@ -1,42 +1,42 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
-import BIRDS from 'vanta/dist/vanta.birds.min';
 import * as THREE from 'three';
-import { Box, Button, Grid, List, ListItem, Paper, Typography, styled } from '@mui/material';
+import { Box } from '@mui/material';
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-}));
-
-export const HomePage = () => {
-  const [vantaEffect, setVantaEffect] = useState(0);
+export default function HomePage() {
+  const [vantaEffect, setVantaEffect] = useState<any>(null);
 
   const ref = useRef(null);
 
   useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(
-        BIRDS({
-          el: ref.current,
-          THREE: THREE,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          backgroundColor: 0xffffff,
-          color1: 0x1c00ff
-        })
+    let isMounted = true;
+    if (typeof window !== 'undefined' && isMounted) {
+      import('vanta/dist/vanta.birds.min').then((VantaBirds) => {
+        const BIRDS = VantaBirds?.default || VantaBirds;
+        if (!vantaEffect) {
+          setVantaEffect(
+            BIRDS({
+              el: ref.current,
+              THREE: THREE,
+              mouseControls: true,
+              touchControls: true,
+              gyroControls: false,
+              minHeight: 200.00,
+              minWidth: 200.00,
+              scale: 1.00,
+              scaleMobile: 1.00,
+              backgroundColor: 0xffffff,
+              color1: 0x1c00ff
+            })
+          );
+        }
+      }
+
       );
     }
     return () => {
-      if (vantaEffect) vantaEffect.destroy();
+      isMounted = false;
+      if (vantaEffect) vantaEffect?.destroy();
     };
   }, [vantaEffect]);
 
@@ -53,5 +53,3 @@ export const HomePage = () => {
     </div>
   );
 };
-
-export default HomePage;

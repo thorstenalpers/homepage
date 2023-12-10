@@ -30,9 +30,7 @@ export default function HomePage() {
             })
           );
         }
-      }
-
-      );
+      });
     }
     return () => {
       isMounted = false;
@@ -40,16 +38,23 @@ export default function HomePage() {
     };
   }, [vantaEffect]);
 
+  const fullSizeDivStyle = {
+    width: '100%',
+    height: '86vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  };
 
   return (
-    <div style={{ height: '100%', width: '100%' }}>
-      <div ref={ref} style={{ height: '100%', width: '100%', minHeight: '85vh' }}>
-
-          <Box bottom={100} position={'absolute'}>
-            <h1 style={{ fontSize: 72 }}>Thorsten Alpers</h1>
-            <h3 style={{ fontSize: 26 }}>An excellent full-stack software developer and architect.</h3>
-         </Box> 
-      </div>
+    <div style={fullSizeDivStyle}>
+      <div ref={ref} style={{ height: '90%', width: '100%'}}>
+        </div>
+  
+       <Box bottom={100} left={300}  position={'absolute'}>
+              <h1 style={{ fontSize: 72 }}>Thorsten Alpers</h1>
+              <h3 style={{ fontSize: 26 }}>An excellent full-stack software developer and architect.</h3>
+           </Box> 
     </div>
   );
 };

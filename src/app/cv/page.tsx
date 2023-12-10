@@ -278,7 +278,7 @@ export default function CvPage() {
         </Grid>
         <Grid xs md lg sm xl />
         <Grid>
-          <img src="/TAlpers.png" alt="Logo" width="180" style={{ marginBottom: '0', paddingBottom: '0' }} />  </Grid>
+          <img src="/homepage/TAlpers.png" alt="Logo" width="180" style={{ marginBottom: '0', paddingBottom: '0' }} />  </Grid>
       </Grid>
 
       <Box sx={{ mt: '0', pt: '0' }}>

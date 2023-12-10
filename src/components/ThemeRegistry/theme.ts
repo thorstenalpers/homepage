@@ -1,18 +1,21 @@
-import { Roboto } from 'next/font/google';
+// import { Roboto } from 'next/font/google';
 import { createTheme } from '@mui/material/styles';
 
-const roboto = Roboto({
-  weight: ['300', '400', '500', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-});
+// const roboto = Roboto({
+//   weight: ['300', '400', '500', '700'],
+//   subsets: ['latin'],
+//   display: 'swap',
+// });
 
 const theme = createTheme({
   palette: {
-    mode: 'light',
+    background: {
+      default: '#fff', // Set default background color to white
+      paper: '#fafafa', // Set paper background color to light gray
+    },
   },
   typography: {
-    fontFamily: roboto.style.fontFamily,
+    // fontFamily: roboto.style.fontFamily,
   },
   components: {
     MuiAlert: {

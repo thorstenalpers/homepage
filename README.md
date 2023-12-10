@@ -1,3 +1,3 @@
 # Homepage
 
-My new homepage developed with react
+My new homepage developed with react, next.js and material ui

@@ -8,7 +8,7 @@ const cvWorkDataArray: CvWorkDataType[] = [
     company: [''],
     location: 'Hamburg',
     details: [
-      'Development of a Trading Bot',
+      'Development of a trading bot',
       'Frontend: Apache Superset',
       'Backend: .Net 8, WebAPI, Selenium, RabbitMQ, ML.NET and Math.NET',
     ]  

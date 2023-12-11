@@ -14,8 +14,8 @@ import ThemeRegistry from '@/components/ThemeRegistry/ThemeRegistry';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WorkIcon from '@mui/icons-material/Work';
-import SurfingIcon from '@mui/icons-material/Surfing';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 
 export const metadata = {
   title: 'Thorsten Alpers',
@@ -64,7 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <ListItem key='/' disablePadding>
                 <ListItemButton component={Link} href='/'>
                   <ListItemIcon>
-                    <HomeOutlinedIcon fontSize='large' sx={{ color: '#000' }} />
+                    <HomeOutlinedIcon sx={{ color: '#000' }} />
                   </ListItemIcon>
                   <ListItemText primary='Home' />
                 </ListItemButton>
@@ -72,7 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <ListItem key='/cv' disablePadding>
                 <ListItemButton component={Link} href='/cv'>
                   <ListItemIcon>
-                    <svg viewBox="0 0 32 32" width="32" height="32" fill="none">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
                       <linearGradient id="gradientCv" gradientTransform="rotate(90)">
                         <stop offset="0" stopColor="#000" />
                         <stop offset="1" stopColor="#28170b" />
@@ -86,14 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <ListItem key='/skills' disablePadding>
                 <ListItemButton component={Link} href='/skills'>
                   <ListItemIcon>
-                    <svg viewBox="0 0 32 32" width="32" height="32" fill="none">
-                      <linearGradient id="gradientSkills" gradientTransform="rotate(90)">
-                        <stop offset="0.05" stopColor="#c68642" />
-                        <stop offset="0.4" stopColor="#000" />
-                        <stop offset="1" stopColor="#0080fe" />
-                      </linearGradient>
-                      <SurfingIcon sx={{ fill: 'url(#gradientSkills)' }} />
-                    </svg>
+                      <AutoAwesomeIcon  sx={{ color: '#000' }} />
                   </ListItemIcon>
                   <ListItemText primary='Skills' />
                 </ListItemButton>

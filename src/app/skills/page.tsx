@@ -2,9 +2,8 @@
 
 import { GridColDef, GridColumnVisibilityModel } from '@mui/x-data-grid';
 import { useState } from 'react';
-import { Box } from '@mui/material';
+import { Box, Rating } from '@mui/material';
 import StripedDataGrid from '@/components/StripedDataGrid';
-import StyledRating from '@/components/StripedDataGrid copy';
 import skillData from './skillDataArray'; 
 
 export default function CvPage() {
@@ -19,7 +18,7 @@ export default function CvPage() {
     { field: 'type', headerName: 'Type', flex: 4 },
     {
       field: 'rating', headerName: 'Rating', flex: 4, renderCell: (params) => (
-        <StyledRating value={params.value} readOnly precision={0.5} color={'skyblue'}/>
+        <Rating value={params.value} readOnly precision={0.5} color={'skyblue'}/>
       )
     },
   ];

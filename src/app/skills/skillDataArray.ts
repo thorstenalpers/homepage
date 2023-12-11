@@ -41,12 +41,12 @@ const skillDataArray: SkillDataType[] = [
   { id: 38, skill: 'Python', type: 'Machine Learning', rating: 2 },
   { id: 39, skill: 'Matlab', type: 'Machine Learning', rating: 1 },
 
-  { id: 37, skill: 'Teamplay', type: 'Soft', rating: 5 },
-  { id: 38, skill: 'Teaching', type: 'Soft', rating: 4.5 },
-  { id: 39, skill: 'Presentation', type: 'Soft', rating: 4 },
-  { id: 40, skill: 'German', type: 'Language', rating: 5 },
-  { id: 41, skill: 'English', type: 'Language', rating: 4 },
-  { id: 42, skill: 'French', type: 'Language', rating: 1 },
+  { id: 40, skill: 'Teamwork', type: 'Soft', rating: 5 },
+  { id: 41, skill: 'Teaching', type: 'Soft', rating: 4.5 },
+  { id: 42, skill: 'Presentation', type: 'Soft', rating: 4 },
+  { id: 43, skill: 'German', type: 'Language', rating: 5 },
+  { id: 44, skill: 'English', type: 'Language', rating: 4 },
+  { id: 45, skill: 'French', type: 'Language', rating: 1 },
 ];
 
 export default skillDataArray;

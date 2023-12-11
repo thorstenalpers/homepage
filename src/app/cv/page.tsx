@@ -23,9 +23,9 @@ export default function CvPage() {
     }, renderCell: (params) => (
       <div>
         {params?.value.map((date, index) => (
-          <Typography key={index} color="textSecondary">
+          <p key={index} color="textSecondary">
             {date}
-          </Typography>
+          </p>
         ))}
       </div>
     ) },
@@ -35,9 +35,9 @@ export default function CvPage() {
     }, renderCell: (params) => (
       <div>
         {params?.value.map((company, index) => (
-          <Typography key={index} color="textSecondary">
+          <p key={index} color="textSecondary">
             {company}
-          </Typography>
+          </p>
         ))}
       </div>
     ) },
@@ -48,9 +48,9 @@ export default function CvPage() {
       }, renderCell: (params) => (
         <div>
           {params?.value.map((detail, index) => (
-            <Typography key={index} color="textSecondary">
+            <p key={index} color="textSecondary">
               * {detail}
-            </Typography>
+            </p>
           ))}
         </div>
       )
@@ -68,9 +68,9 @@ export default function CvPage() {
     }, renderCell: (params) => (
       <div>
         {params?.value.map((date, index) => (
-          <Typography key={index} color="textSecondary">
+          <p key={index} color="textSecondary">
             {date}
-          </Typography>
+          </p>
         ))}
       </div>
     ) },
@@ -79,9 +79,9 @@ export default function CvPage() {
     }, renderCell: (params) => (
       <div>
         {params?.value.map((education, index) => (
-          <Typography key={index} color="textSecondary">
+          <p key={index} color="textSecondary">
             {education}
-          </Typography>
+          </p>
         ))}
       </div>
     )},
@@ -93,9 +93,9 @@ export default function CvPage() {
       }, renderCell: (params) => (
         <div>
           {params?.value.map((detail, index) => (
-            <Typography key={index} color="textSecondary">
+            <p key={index} color="textSecondary">
               * {detail}
-            </Typography>
+            </p>
           ))}
         </div>
       )

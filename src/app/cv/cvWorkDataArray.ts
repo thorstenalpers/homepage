@@ -3,6 +3,18 @@ import { CvWorkDataType } from "./cvWorkData.type";
 const cvWorkDataArray: CvWorkDataType[] = [
   {
     id: 1, 
+    date: ['2023/05 -',  'now'],
+    position: 'Trader, project manager, software architect and developer',
+    company: [''],
+    location: 'Hamburg',
+    details: [
+      'Development of a Trading Bot',
+      'Frontend: Apache Superset',
+      'Backend: .Net 8, WebAPI, Selenium, RabbitMQ, ML.NET and Math.NET',
+    ]  
+  },  
+  {
+    id: 2, 
     date: ['2021/05 -',  '2023/04'],
     position: 'Senior Softwareentwickler',
     company: ['Vattenfall Energy Trading GmbH'],
@@ -14,7 +26,7 @@ const cvWorkDataArray: CvWorkDataType[] = [
     ]  
   },
   {
-    id: 2, 
+    id: 3, 
     date: ['2021/01 -',  '2021/04'],
     position: 'Senior Backendentwickler',
     company: ['Hellmann Worldwide Logistics SE & Co. KG'],
@@ -24,7 +36,7 @@ const cvWorkDataArray: CvWorkDataType[] = [
       'New development with Asp .Net Core, REST, Kubernetes and RabbitMQ',
     ]  },
   {
-    id: 3, 
+    id: 4, 
     date: ['2019/09 -',  '2020/09'],
     position: 'Senior Associate',
     company: ['PricewaterhouseCoopers GmbH', 'Wirtschaftsprüfungsgesellschaft'],
@@ -35,7 +47,7 @@ const cvWorkDataArray: CvWorkDataType[] = [
       '1 year further development: Javascript, Asp .Net 4.6 MVC, .Net Core 2+3, Docker, Selenium and Azure',
     ]  },
   {
-    id: 4, 
+    id: 5, 
     date: ['2019/03 -',  '2019/08'],
     position: 'Senior Softwareentwickler',
     company: ['KPMG IT Service GmbH'],
@@ -45,7 +57,7 @@ const cvWorkDataArray: CvWorkDataType[] = [
       'New development: .Net Core, Angular, Typescript, RabbitMQ, Microservices and Azure Service Fabric',
     ]  },
   {
-    id: 5, 
+    id: 6, 
     date: ['2017/12 -',  '2019/01'],
     position: 'Softwarearchitekt',
     company: ['Dataport AöR'],
@@ -57,7 +69,7 @@ const cvWorkDataArray: CvWorkDataType[] = [
       'approx. 1 year development of online services for Hamburg: Asp .Net 4.6.2 MVC, HTML5, JS and Bootstrap',
     ]  },
   {
-    id: 6, 
+    id: 7, 
     date: ['2011/01 -',  '2017/08'],
     position: 'Software Engineer',
     company: ['Crane Payment Innovations GmbH'],
@@ -72,7 +84,7 @@ const cvWorkDataArray: CvWorkDataType[] = [
     ]
   },
   {
-    id: 7, 
+    id: 8, 
     date: ['2010/04 -',  '2010/08'],
     position: 'Internship R&D',
     company: ['Dräger Medical AG & Co. KG'],
@@ -84,7 +96,7 @@ const cvWorkDataArray: CvWorkDataType[] = [
       'Creation of DLLs to control actuators and sensors in C++',
     ]  },
   {
-    id: 8, 
+    id: 9, 
     date: ['2008/03 -',  '2010/03'],
     position: 'Student employee', 
     company: ['University of Applied Sciences Hamburg'],

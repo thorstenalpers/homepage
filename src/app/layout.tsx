@@ -116,6 +116,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             component="main"
             sx={{
               flexGrow: 1,
+              minWidth: 1500,
               bgcolor: 'background.default',
               ml: `${TOOLBAR_WIDTH}px`,
               mt: ['48px', '56px', '64px'],

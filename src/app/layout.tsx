@@ -22,7 +22,7 @@ export const metadata = {
   description: 'Homepage of Thorsten Alpers',
 };
 
-const DRAWER_WIDTH = 180;
+const TOOLBAR_WIDTH = 160;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -46,10 +46,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </AppBar>
           <Drawer
             sx={{
-              width: DRAWER_WIDTH,
+              width: TOOLBAR_WIDTH,
               flexShrink: 0,
               '& .MuiDrawer-paper': {
-                width: DRAWER_WIDTH,
+                width: TOOLBAR_WIDTH,
                 boxSizing: 'border-box',
                 top: ['48px', '56px', '64px'],
                 height: 'auto',
@@ -117,7 +117,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             sx={{
               flexGrow: 1,
               bgcolor: 'background.default',
-              ml: `${DRAWER_WIDTH}px`,
+              ml: `${TOOLBAR_WIDTH}px`,
               mt: ['48px', '56px', '64px'],
               p: 3,
             }}

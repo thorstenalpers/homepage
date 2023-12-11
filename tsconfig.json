@@ -38,11 +38,11 @@
     ".next/types/**/*.ts",
     "node_modules/vanta/dist/vanta.birds.min.js",
     "dist/types/**/*.ts"
-  ],
+, "src/app/skills/services/SkillDataContextts"  ],
   "exclude": [
     "node_modules"
   ],
   "types": [
-    "vanta.types.d.ts"
+    "src/app/vanta.types.d.ts"
   ]
 }

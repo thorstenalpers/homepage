@@ -4,7 +4,7 @@ const cvWorkDataArray: CvWorkDataType[] = [
   {
     id: 1, 
     date: ['2023/05 -',  'now'],
-    position: 'Trader, project manager, software architect and developer',
+    position: 'Software Architect and Developer',
     company: [''],
     location: 'Hamburg',
     details: [

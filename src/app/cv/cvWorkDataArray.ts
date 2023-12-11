@@ -9,8 +9,8 @@ const cvWorkDataArray: CvWorkDataType[] = [
     location: 'Hamburg',
     details: [
       'Development of a trading bot',
-      'Frontend: Apache Superset',
-      'Backend: .Net 8, WebAPI, Selenium, RabbitMQ, ML.NET and Math.NET',
+      'Frontend: Apache Superset, Swagger and Kubernetes CronJobs',
+      'Backend: .Net 8, RabbitMQ, Kubernetes, Selenium, ML.NET and ML.NET',
     ]  
   },  
   {

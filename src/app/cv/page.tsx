@@ -110,7 +110,7 @@ export default function CvPage() {
 
       // Calculate height based on details content
       const detailsRowCount = params.model.details.length;
-      const detailsHeight = detailsRowCount * 20; // Change 20 to the desired height per detail item
+      const detailsHeight = detailsRowCount * 20;
 
       maxHeight =  baseHeight + detailsHeight;
     }
@@ -120,7 +120,7 @@ export default function CvPage() {
 
       // Calculate height based on details content
       const eductionRowCount = params.model.education.length;
-      const eductionHeight = eductionRowCount * 8;
+      const eductionHeight = eductionRowCount * 20;
 
       let maxHeightEducation =  baseHeight + eductionHeight;
       if(maxHeightEducation > maxHeight)  {

@@ -28,9 +28,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        <link rel="manifest" href="/homepage/manifest.json" />
-        <link rel="shortcut icon" href="/homepage/favicon.ico" />
-        <link rel="shortcut icon" type="image/png" href="/homepage/favicon.ico"/>
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
         <base href="%PUBLIC_URL%/" />
     </head>
       <body>

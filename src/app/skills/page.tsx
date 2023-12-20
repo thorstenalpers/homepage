@@ -18,14 +18,15 @@ export default function CvPage() {
     { field: 'type', headerName: 'Type', flex: 4 },
     {
       field: 'rating', headerName: 'Rating', flex: 4, renderCell: (params) => (
-        <Rating value={params.value} readOnly precision={0.5} color={'skyblue'}/>
+        <Rating value={params.value} readOnly precision={0.5}/>
       )
     },
   ];
 
   return (
     <div style={{ height: '100%', width: '100%' }}>
-      <Box>
+      <Box sx={{ mt: '0', pt: '0' }}>
+        <h2 style={{ marginTop: '0', paddingTop: '0' }}>Skills</h2>
         <StripedDataGrid
           rows={skillData}
           columns={columns}

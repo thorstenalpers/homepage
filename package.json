@@ -1,9 +1,9 @@
 {
-  "name": "material-ui-nextjs-ts",
-  "version": "5.0.0",
+  "name": "homepage",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "explorer http://localhost:3000 & next dev",
     "build": "next build && touch ./out/.nojekyll",
     "postbuild": "next-sitemap",
     "start": "npx serve@latest out",

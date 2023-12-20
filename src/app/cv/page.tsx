@@ -3,10 +3,10 @@
 import { GridColDef, GridColumnVisibilityModel } from '@mui/x-data-grid';
 import { useState } from 'react';
 import { Box, Typography } from '@mui/material';
-import StripedDataGrid from '@/components/StripedDataGrid';
 import Grid from '@mui/material/Unstable_Grid2';
-import cvEducationDataArray from './cvEducationDataArray';
-import cvWorkDataArray from './cvWorkDataArray';
+import {cvEducationDataArray} from '../../services/cv/cvEducationDataArray';
+import {cvWorkDataArray} from '../../services/cv/cvWorkDataArray';
+import StripedDataGrid from '@/components/StripedDataGrid';
 
 export default function CvPage() {
   const [columnVisibilityModel] = useState<GridColumnVisibilityModel>({

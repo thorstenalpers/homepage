@@ -1,6 +1,6 @@
 import { CvWorkDataType } from "./cvWorkData.type";
 
-const cvWorkDataArray: CvWorkDataType[] = [
+export const cvWorkDataArray: CvWorkDataType[] = [
   {
     id: 1, 
     date: ['2023/05 -',  'now'],
@@ -105,5 +105,3 @@ const cvWorkDataArray: CvWorkDataType[] = [
       'Supervision and monitoring of laboratory experiments',
     ]  },
 ];
-
-export default cvWorkDataArray;

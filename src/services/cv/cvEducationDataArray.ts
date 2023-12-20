@@ -1,6 +1,6 @@
 import { CvEducationDataType } from "./cvEducationData.type";
 
-const cvEducationDataArray: CvEducationDataType[] = [
+export const cvEducationDataArray: CvEducationDataType[] = [
     {
       id: 1, 
       date: ['2006/09 -',  '2010/08'],
@@ -29,4 +29,3 @@ const cvEducationDataArray: CvEducationDataType[] = [
       details: ['Overall grade 2.8']
     },
   ];
-export default cvEducationDataArray;

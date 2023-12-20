@@ -37,12 +37,13 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "node_modules/vanta/dist/vanta.birds.min.js",
-    "dist/types/**/*.ts"
-, "src/app/skills/services/SkillDataContextts"  ],
+    "dist/types/**/*.ts",
+    "out/types/**/*.ts"
+  ],
   "exclude": [
     "node_modules"
   ],
   "types": [
-    "src/app/vanta.types.d.ts"
+    "vanta.types.d.ts"
   ]
 }

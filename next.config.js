@@ -4,6 +4,7 @@ const nextConfig = {
   basePath: "",
   reactStrictMode: true,
   swcMinify: true,
+  distDir: 'out',
   modularizeImports: {
     '@mui/icons-material': {
       transform: '@mui/icons-material/{{member}}',

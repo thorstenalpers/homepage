@@ -1,6 +1,6 @@
 import { SkillDataType } from "./skillData.type";
 
-const skillDataArray: SkillDataType[] = [
+export const skillDataArray: SkillDataType[] = [
   { id: 1, skill: 'Layered Architecture', type: 'Architecture', rating: 5 },
   { id: 2, skill: 'Clean Architecture', type: 'Architecture', rating: 4 },
   { id: 3, skill: 'Event Driven Architecture', type: 'Architecture', rating: 4 },
@@ -62,5 +62,3 @@ const skillDataArray: SkillDataType[] = [
   { id: 112, skill: 'English', type: 'Language', rating: 4 },
   { id: 113, skill: 'French', type: 'Language', rating: 1 },
 ];
-
-export default skillDataArray;

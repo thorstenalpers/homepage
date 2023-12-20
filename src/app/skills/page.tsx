@@ -3,8 +3,8 @@
 import { GridColDef, GridColumnVisibilityModel } from '@mui/x-data-grid';
 import { useState } from 'react';
 import { Box, Rating } from '@mui/material';
+import {skillDataArray} from '../../services/skill/skillDataArray';
 import StripedDataGrid from '@/components/StripedDataGrid';
-import skillData from './skillDataArray'; 
 
 export default function CvPage() {
   const [columnVisibilityModel] = useState<GridColumnVisibilityModel>({
@@ -28,7 +28,7 @@ export default function CvPage() {
       <Box sx={{ mt: '0', pt: '0' }}>
         <h2 style={{ marginTop: '0', paddingTop: '0' }}>Skills</h2>
         <StripedDataGrid
-          rows={skillData}
+          rows={skillDataArray}
           columns={columns}
           initialState={{
             columns: {

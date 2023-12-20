@@ -10,17 +10,12 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import ThemeRegistry from '@/components/ThemeRegistry/ThemeRegistry';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WorkIcon from '@mui/icons-material/Work';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
-
-export const metadata = {
-  title: 'Thorsten Alpers',
-  description: 'Homepage of Thorsten Alpers',
-};
+import ThemeRegistry from '@/components/ThemeRegistry/ThemeRegistry';
 
 const TOOLBAR_WIDTH = 160;
 
@@ -30,9 +25,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="manifest" href="/manifest.json" />
         <link rel="shortcut icon" href="/favicon.ico" />
-		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <base href="%PUBLIC_URL%/" />
-    </head>
+      </head>
       <body>
         <ThemeRegistry>
           <AppBar position="fixed" sx={{ zIndex: 2000 }}>
@@ -72,7 +67,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <ListItem key='/cv' disablePadding>
                 <ListItemButton component={Link} href='/cv'>
                   <ListItemIcon>
-<svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
                       <linearGradient id="gradientCv" gradientTransform="rotate(90)">
                         <stop offset="0" stopColor="#000" />
                         <stop offset="1" stopColor="#28170b" />
@@ -86,7 +81,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <ListItem key='/skills' disablePadding>
                 <ListItemButton component={Link} href='/skills'>
                   <ListItemIcon>
-                      <AutoAwesomeIcon  sx={{ color: '#000' }} />
+                    <AutoAwesomeIcon sx={{ color: '#000' }} />
                   </ListItemIcon>
                   <ListItemText primary='Skills' />
                 </ListItemButton>
